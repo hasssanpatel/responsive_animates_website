@@ -1,0 +1,12 @@
+/* Appropriate CSS styles for the brand text */
+.brand-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #565387;
+    /* Add any other styling as needed */
+  }
+
+/* Active link styling */
+.nav-link.active {
+  font-weight: bold;
+}

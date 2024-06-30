@@ -1,0 +1,77 @@
+/* src/components/service.css */
+
+/* Reset default body styles */
+body {
+  background-color: #f5f7fa;
+  color: #333;
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+}
+
+/* Section styling */
+.services {
+  padding: 4rem 0;
+}
+
+/* Heading styles */
+.text-center {
+  color: #565387;
+}
+
+/* Card styles */
+.card {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  color: #666;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #565387;
+  border: none;
+  border-radius: 5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #444;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 2rem;
+  }
+}

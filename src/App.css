@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Muli", sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+.navbar {
+  background-color: #fff !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+  font-size: 1.9rem !important;
+  color: #565387 !important;
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2871, 71, 71, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-nav {
+  align-items: center;
+  margin-left: auto; /* Align nav links to the right */
+}
+
+.navbar a {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  color: #333;
+  transition: color 0.3s ease;
+  position: relative; /* Add position relative for pseudo-element */
+}
+
+.navbar a:hover {
+  color: #565387;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 1rem;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #565387 !important;
+}
+
+/* Add a bottom border for active links */
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; /* Adjust this value based on your design */
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid #565387; /* Color and thickness of the bottom border */
+}
+@keyframes moveImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.header-img img {
+  animation: moveImage 5s ease infinite; /* Adjust duration and timing function as needed */
+}

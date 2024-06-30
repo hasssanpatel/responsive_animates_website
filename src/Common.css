@@ -1,0 +1,72 @@
+/* Reset default body styles */
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+  }
+  
+  /* Specific section styles */
+  #header {
+    padding: 5rem 0;
+    background-color: #fff;
+  }
+  
+  /* Style for the header image */
+  .header-img img {
+    border: none;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for the image */
+  }
+  
+  /* Optional: Remove border and background color from the navbar */
+  .navbar {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+  
+  /* Navbar brand styling */
+  .navbar-brand {
+    color: #565387 !important;
+    font-weight: bold;
+  }
+  
+  /* Navbar link styles */
+  .navbar-nav .nav-link {
+    color: #333;
+  }
+  
+  /* Active navbar link style */
+  .navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #565387 !important;
+  }
+  
+  /* Button styling */
+  .btn-custom {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #565387; /* Background color matches the section background */
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: 1px solid #615477;
+    border-radius: 6rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-custom:hover {
+    background-color: #615477; /* Darker shade on hover */
+    color: #fff;
+  }
+  
+  /* Adjust image animation */
+  .header-img img {
+    transition: transform 0.2s ease;
+  }
+  
+  .header-img img:hover {
+    transform: scale(1.05); /* Scale up image slightly on hover */
+  }
+  
